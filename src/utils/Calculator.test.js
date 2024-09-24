@@ -19,3 +19,7 @@ test('empty string returns 0', () => {
   test('custom delimiter', () => {
     expect(add("//;\n1;2")).toBe(3);
   });
+
+  test('negative numbers throw an exception', () => {
+    expect(() => add("1,-2")).toThrow('Negative numbers not allowed: -2');
+  });

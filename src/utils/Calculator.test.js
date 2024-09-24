@@ -11,3 +11,7 @@ test('empty string returns 0', () => {
   test('two numbers, comma separated', () => {
     expect(add("1,5")).toBe(6);
   });
+
+  test('handle new lines between numbers', () => {
+    expect(add("1\n2,3")).toBe(6);
+  });

@@ -16,5 +16,4 @@ export function add(numbers) {
     }
 
     return numArray.reduce((sum, num) => sum + (isNaN(num) ? 0 : num), 0);
-
 }
